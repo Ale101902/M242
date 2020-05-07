@@ -3,10 +3,11 @@
 #include <util\delay.h>
 
 #include <inttypes.h>
+#define F_CPU 1600000
 
 int main(void)
 {
-	Usart_Init();
+	Usart_Init(250000);
 	
 	
 	uint8_t i = 10;
